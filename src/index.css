@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0c0b09;
+  --color-surface: #141310;
+  --color-amber: #c8a84b;
+  --color-amber-dim: rgba(200, 168, 75, 0.12);
+  --color-cream: #f0e6d0;
+  --color-muted: #7a7165;
+  --color-border: rgba(240, 230, 208, 0.08);
+  
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-cream);
+  }
+
+  /* Fallback for touch devices to show normal cursor */
+  @media (pointer: coarse) {
+    body {
+      cursor: auto;
+    }
+  }
+}
+
+/* Custom utilities for the text gradient */
+@layer utilities {
+  .text-gradient-amber {
+    background: linear-gradient(180deg, var(--color-amber) 0%, rgba(200,168,75,0.25) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+/* Timeline Animations & Transitions */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.duration-300 { transition-duration: 300ms; }
+.duration-700 { transition-duration: 700ms; }
+.duration-1000 { transition-duration: 1000ms; }
+
+.backdrop-blur-lg { backdrop-filter: blur(16px); }
+
+/* Needed explicit Z-index & Scales to match styles since Tailwind v4 might lack some if not pre-defined */
+.z-10 { z-index: 10; }
+.z-50 { z-index: 50; }
+.scale-110 { transform: scale(1.1); }
+.scale-125 { transform: scale(1.25); }
+.scale-150 { transform: scale(1.5); }
+.opacity-50 { opacity: 0.5; }
+.opacity-60 { opacity: 0.6; }
+.opacity-70 { opacity: 0.7; }
+
