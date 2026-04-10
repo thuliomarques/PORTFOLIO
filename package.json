@@ -1,9 +1,9 @@
 {
-  "name": "hilut-portfolio",
+  "name": "thuliomarques-portfolio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
-  "homepage": "https://hilut.github.io/PORTFOLIO/",
+  "homepage": "https://thuliomarques.github.io/portfolio/",
   "scripts": {
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
