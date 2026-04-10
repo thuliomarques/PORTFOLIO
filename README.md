@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="800" alt="Thulio Marques - Product Designer" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+  <h1>Thulio Marques</h1>
   <h3>Product Designer & Developer</h3>
   <p>Building digital experiences with design thinking + code</p>
 </div>
