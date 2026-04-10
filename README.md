@@ -35,4 +35,4 @@ Claude Code · Lovable · Vercel AI SDK
 
 ---
 
-**Live Portfolio:** [thuliomarques.github.io/portfolio](https://thuliomarques.github.io/portfolio)
+**Live Portfolio:** [thuliomarques.github.io](https://thuliomarques.github.io)
